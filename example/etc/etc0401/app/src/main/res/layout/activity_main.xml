@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll"
+        android:layout_marginTop="20dp">
+        <TableRow>
+            <CheckBox
+                android:text="CheckBox"
+                android:layout_marginRight="10dp"/>
+            <CheckBox
+                android:text="CheckBox"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="30dp">
+            <RadioButton
+                android:text="RadioButton"
+                android:layout_marginRight="10dp"/>
+            <RadioButton
+                android:text="RadioButton"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
